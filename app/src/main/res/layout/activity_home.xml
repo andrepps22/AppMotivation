@@ -22,6 +22,7 @@
         android:background="@color/white" />
 
     <ImageView
+        android:id="@+id/imageview_all"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignTop="@id/view_menu"
@@ -32,6 +33,7 @@
         android:src="@drawable/ic_infinity" />
 
     <ImageView
+        android:id="@+id/imageview_happy"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignTop="@id/view_menu"
@@ -41,6 +43,7 @@
         android:src="@drawable/ic_favorite" />
 
     <ImageView
+        android:id="@+id/imageview_sunny"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignTop="@id/view_menu"
@@ -65,18 +68,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_margin="18dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
         android:text="@string/msg_frase_de_apoio" />
 
     <View
+        android:layout_width="132dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/textview_frasemotivacional"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_below="@id/textview_frasemotivacional"
-        android:background="@color/wine"
-        android:layout_width="132dp"
-        android:layout_height="4dp"/>
+        android:background="@color/wine" />
 
 
     <Button
+        android:id="@+id/btn_new_phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/view_body"

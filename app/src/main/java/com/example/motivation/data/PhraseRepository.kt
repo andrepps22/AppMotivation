@@ -2,8 +2,7 @@ package com.example.motivation.data
 
 import com.example.motivation.utils.AppConsts
 
-
-data class Phrase(val description:String, val filter: Int)
+data class Phrase(val description:String, val category: Int)
 
 class PhraseRepository {
     val listOfPhrase = listOf(
@@ -31,4 +30,18 @@ class PhraseRepository {
         Phrase("O calor do sol aquece até os sonhos adormecidos.", AppConsts.FILTER.SUNNY),
         Phrase("A luz que você procura lá fora também está dentro de você.", AppConsts.FILTER.SUNNY)
     )
+
+    fun getPhrase(filter: Int): String{
+
+        if ( filter != AppConsts.FILTER.ALL){
+            val phrase = listOfPhrase.filter { it.category == filter}
+            val rand = phrase.indices.random()
+            return phrase[rand].description
+        } else {
+            val phrase = listOfPhrase
+            val rand = phrase.indices.random()
+            return phrase[rand].description
+        }
+
+    }
 }
