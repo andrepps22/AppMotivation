@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Motivation</string>
+    <string name="msg_letsgo">Vamos começar?</string>
+    <string name="msg_your_name">Qual é seu nome?</string>
+    <string name="btn_save">Salvar</string>
+    <string name="desc_menu_mensagens">Menu mensagens</string>
+    <string name="desc_favoritos">Favoritos</string>
+    <string name="desc_modo_diurno_noturno">modo diurno/noturno</string>
+    <string name="btn_nova_frase">Nova Frase</string>
+    <string name="msg_frase_de_apoio">Frase de apoio</string>
+    <string name="msg_apresentacao">Olá, Nome</string>
+    <string name="info_name_empty">Deve inserir um nome!</string>
+    <string name="msg_saudacoes">Olá, </string>
+</resources>
