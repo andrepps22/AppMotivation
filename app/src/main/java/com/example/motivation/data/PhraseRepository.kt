@@ -5,6 +5,8 @@ import com.example.motivation.utils.AppConsts
 data class Phrase(val description:String, val category: Int)
 
 class PhraseRepository {
+    val all = AppConsts.FILTER.ALL
+
     val listOfPhrase = listOf(
         // Happy
         Phrase("A felicidade começa com um sorriso sincero.", AppConsts.FILTER.HAPPY),
@@ -32,16 +34,10 @@ class PhraseRepository {
     )
 
     fun getPhrase(filter: Int): String{
+            val phrase = listOfPhrase.filter { (it.category == filter|| filter == all) }
+            val rand = phrase.indices.random()
+            return phrase[rand].description
 
-        if ( filter != AppConsts.FILTER.ALL){
-            val phrase = listOfPhrase.filter { it.category == filter}
-            val rand = phrase.indices.random()
-            return phrase[rand].description
-        } else {
-            val phrase = listOfPhrase
-            val rand = phrase.indices.random()
-            return phrase[rand].description
-        }
 
     }
 }

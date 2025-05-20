@@ -86,7 +86,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun getInformations() {
         val nome = sharedPreferences.getPreferences(AppConsts.KEY.NOME_KEY)
-        binding.textviewGreet.text = "Olá, $nome"
+        binding.textviewGreet.text = getString(R.string.saudacao, nome)
     }
 
     private fun getPhrase(filter: Int) {

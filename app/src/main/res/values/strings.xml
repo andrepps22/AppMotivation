@@ -11,4 +11,5 @@
     <string name="msg_apresentacao">Olá, Nome</string>
     <string name="info_name_empty">Deve inserir um nome!</string>
     <string name="msg_saudacoes">Olá, </string>
+    <string name="saudacao">Olá, %1$s</string>
 </resources>
